@@ -1,4 +1,112 @@
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
 body {
-  background: #355da0;
-  background: linear-gradient(#234471, #365ca3);
+  background: white;
+  font-size: 14px;
+}
+
+div, img, figure, article, section {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.75em;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  color: #cbdaff;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+section {
+  background-color: #355da0;
+  background-image: linear-gradient(#234471, #365ca3);
+  background-repeat: no-repeat;
+  color: white;
+  margin: 12px auto;
+  padding: 12px;
+  width: 1024px;
+}
+
+section a:link, section a:visited {
+    color: #eaed60;
+}
+
+figure, article {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+figure {
+  margin: 0 12px 12px 0;
+  padding: 0;
+  max-width: 300px;
+}
+article {
+  max-width: 720px;
+}
+
+.callout {
+  background-color: #365da2;
+}
+
+figure .callout {
+  position: absolute;
+  top: 108px;
+  left: -28px;
+  padding: 24px;
+}
+
+header a, footer a {
+  display: block;
+  text-align: right;
+  margin: 0 0 12px;
+}
+header a:after, footer a:after {
+  margin-left: 1em;
+  font-family: "FontAwesome";
+}
+
+header a:link, header a:visited {
+  color: #bbc0c3;
+}
+
+a.close:after {
+  content: "\f00d";
+}
+
+a.learnMore:after {
+  content: "\f0da";
+}
+
+@media screen and (max-width: 1060px) {
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+  
+  section {
+    max-width: 97%;
+  }
+  
+  figure, article {
+    display: block;
+    margin: 0 0 12px;
+    max-width: 100%;
+  }
+  
+  figure {
+    text-align: center;
+  }
 }
