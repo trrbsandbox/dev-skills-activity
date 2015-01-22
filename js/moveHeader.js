@@ -15,8 +15,11 @@ function moveHeader() {
   }
   
   if(newWidth > portraitWidth) {
+    // changed from portrait to landscape
     $('#control-widget header h1').prependTo($('#control-widget article'));
   } else {
+    // changed from landscape to portrait --
+    // not currently working; needs to be debugged.
     $('#control-widget article h1').appendTo($('#control-widget header'));
   }
 }

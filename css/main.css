@@ -3,6 +3,7 @@
 body {
   background: white;
   font-size: 14px;
+  font-family: 'Arial', 'Helvetica', 'FreeSans', sans-serif;
 }
 
 div, img, figure, article, section {
